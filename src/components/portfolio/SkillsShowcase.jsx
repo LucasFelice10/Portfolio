@@ -32,7 +32,7 @@ export default function SkillsShowcase() {
   const skills = ['Elementor', 'Python', 'CSS', 'JavaScript', 'Postman', 'GitHub', 'HTML']
 
   return (
-    <section id="skills" className="py-24 px-4 relative overflow-hidden">
+    <section id="skills" className="py-12 md:py-24 px-4 relative overflow-hidden scroll-mt-28">
       <div className="max-w-6xl mx-auto">
         {/* Título */}
         <motion.div
