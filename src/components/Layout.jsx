@@ -35,11 +35,10 @@ function NavigationContent() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-black/80 backdrop-blur-lg border-b border-white/10'
-          : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+        ? 'bg-black/80 backdrop-blur-lg border-b border-white/10'
+        : 'bg-transparent'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
@@ -63,14 +62,14 @@ function NavigationContent() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item, idx) => (
-              <button
+              <a
                 key={idx}
-                onClick={() => scrollToSection(item.href)}
+                href={item.href}
                 className="text-gray-300 hover:text-violet-400 transition-colors relative group"
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-violet-400 group-hover:w-full transition-all duration-300" />
-              </button>
+              </a>
             ))}
           </div>
 
@@ -109,13 +108,14 @@ function NavigationContent() {
           >
             <div className="px-4 py-6 space-y-4">
               {navItems.map((item, idx) => (
-                <button
+                <a
                   key={idx}
-                  onClick={() => scrollToSection(item.href)}
+                  href={item.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
                   className="block w-full text-left text-gray-300 hover:text-violet-400 transition-colors py-2"
                 >
                   {item.label}
-                </button>
+                </a>
               ))}
             </div>
           </motion.div>
