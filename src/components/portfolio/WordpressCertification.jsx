@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { useLanguage } from '../LanguageContext'
 import { Award } from 'lucide-react'
+import certificateImage from '../../assets/images/wordpress-certificate.jpg'
 
 export default function WordpressCertification() {
     const { t } = useLanguage()
@@ -24,7 +25,7 @@ export default function WordpressCertification() {
                         <div className="relative bg-gradient-to-br from-violet-500/20 to-purple-500/20 p-3 rounded-2xl border-4 border-gray-700">
                             <div className="bg-white rounded-lg overflow-hidden shadow-2xl">
                                 <img
-                                    src="/images/wordpress-certificate.jpg"
+                                    src={certificateImage}
                                     alt="Wordpress Developer Certificate"
                                     className="w-full h-auto"
                                 />
