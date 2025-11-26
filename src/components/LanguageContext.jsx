@@ -38,6 +38,11 @@ const translations = {
       viewProject: 'Ver Proyecto',
       noProjects: 'Proyectos próximamente...'
     },
+    certification: {
+      title: 'Desarrollador en Wordpress',
+      description: 'Certificación profesional que avala la excelencia en el desarrollo y diseño de sitios web con WordPress. Dominio avanzado de temas, plugins y personalización para crear experiencias digitales únicas y funcionales.',
+      viewCertificate: 'Ver Certificado'
+    },
     experience: {
       title: 'Experiencia & Educación',
       education: 'Educación',
@@ -99,6 +104,11 @@ const translations = {
       title: 'Featured Projects',
       viewProject: 'View Project',
       noProjects: 'Projects coming soon...'
+    },
+    certification: {
+      title: 'Wordpress Developer',
+      description: 'Professional certification demonstrating excellence in WordPress website development and design. Advanced mastery of themes, plugins, and customization to create unique and functional digital experiences.',
+      viewCertificate: 'View Certificate'
     },
     experience: {
       title: 'Experience & Education',
